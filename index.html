@@ -3,16 +3,50 @@
 
   <head>
     <title>NYF Jewellery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      body{
+      {
+        box-sizing:border-box;
+      }
+      body {
+        margin:0;
         background-color: pink;
       }
-      #p1{
-        font-size: 160%; 
+      /* style the header */
+      .header {
+        background-color: white;
+        padding: 20px;
         text-align: center;
-      } 
-      h1{
-        font-size: 120%;
+      }
+      /* style the top navigation bar*/
+      .topnav {
+        overflow: hidden;
+        background: white;
+      }
+      /* style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      /* change color on hover*/
+      .topnav a: hover {
+       background-color: blue;
+       color: black; 
+      }
+      #p1{
+        font-size: 200%; 
+        text-align: center;
+      }
+
+      .topnav1 {
+        position: absolute;
+        top: 45px;
+        left: 100px;
       }
     </style>
   
@@ -20,10 +54,13 @@
 
   <body>
     <p id="p1">NYF Jewellery</p>
-    <div class="topnav">
+    <div class="topnav1">
        <input type="text" placeholder="Search..">
     </div>
-    <h1> <a href="ringen.html"> Ringen </a> </h1>
+    <div class= "topnav">
+      <a href="ringen.html"> Ringen </a>
+      <a href="kettingen.html"> Kettingen </a>
+      <a href="armbanden.html"> Armbanden </a>
   </body>
   
 
