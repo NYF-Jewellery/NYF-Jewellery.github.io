@@ -8,24 +8,39 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #ffcccc;
+      background-color: pink;
     }
 
     header {
-      background-color: white;
+      background-color: pink;
       border-bottom: 2px solid gold;
       color: #333;
       padding: 1em;
       text-align: center;
     }
-      nav {
-        background-color: #333;
-        border-bottom: 2px solid gold;
-        color: #333;
-        padding: 1em;
-        text-align: center;
-      }
 
+    #p1 {
+      width: 200px;
+      height: 150;
+    }
+    nav {
+      background-color: white;
+      overflow: hidden;
+      border: 1px solid gold;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: pink;
+    }
     section {
       display: flex;
       flex-wrap: wrap;
@@ -59,6 +74,10 @@
 </head>
   <body>
     <header>
+     <div class="search-bar">
+       <input type="text" placeholder="Search...">
+       <button type="submit">Search</button>
+      
       <h1> NYF Jewellery</h1>
     </header>
 
@@ -69,10 +88,42 @@
       <a href=kettingen.html> Kettingen</a>
     </nav>
 
-    <div class="search-bar">
-      <input type="text" placeholder="Search...">
-      <button type="submit">Search</button>
-    </div>
+    <section>
+      <div class="product">
+        <img id="p1" src="ring1.png" alt="Zilver ring1"> 
+        <h2>Diamond Ring</h2>
+        <p> The perfect ring for you!</p>
+        <p>€15,00</p>
+      </div>
+
+      <div class="product">
+        <img id="p1" src="ring2.png" alt="Golden ring2"> 
+        <h2>Golden Ring</h2>
+        <p> The perfect ring for you!</p>
+        <p>€20,00</p>
+      </div>
+
+       <div class="product">
+        <img id="p1" src="ring3.png" alt="Zilver ring3"> 
+        <h2>Zilver Ring</h2>
+        <p> The perfect ring for you!</p>
+        <p>€17,50</p>
+      </div>
+
+       <div class="product">
+        <img id="p1" src="ring4.png" alt="Zilver ring4"> 
+        <h2>Zilver Ring</h2>
+        <p> The perfect ring for you!</p>
+        <p>€22,00</p>
+      </div>
+
+       <div class="product">
+        <img id="p1" src="ring5.png" alt="Zilver ring5"> 
+        <h2>Zilver Ring</h2>
+        <p> The perfect ring for you!</p>
+        <p>€20,00</p>
+      </div>
+    </section>
 
     <footer>
       <p>&copy; 2024 NYF Jewellery. All rights reserved.</p>
