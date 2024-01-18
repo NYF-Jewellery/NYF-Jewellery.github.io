@@ -2,6 +2,7 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    
 <style>
   body {
      font-family: Arial, sans-serif;
@@ -16,8 +17,30 @@
      color: #333;
      padding: 1em;
     text-align: center;
+  
   }
 
+  h1 {
+    text-align: center;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-bar input[type="text"],
+  .search-bar button {
+  padding: 0.5em;
+    font-size: 1em;
+    margin-right: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px
+  }
+
+  .search-bar {
+    margin-top: 1em;
+    margin-right: 1em;
+  }
   #p1 {
     width: 200px;
     height: 150;
@@ -77,11 +100,12 @@ section {
   </head>
   <body>
     <header>
+      <h1> NYF Jewellery</h1>
       <div class="search-bar">
         <input type="text" placeholder="Search...">
         <button type="submit">Search</button>
-        <h1> NYF Jewellery</h1>
-        </header>
+      </div>
+    </header>
 
     <nav>
       <a href="index.html"> Home</a>
@@ -97,3 +121,38 @@ section {
         <p> The perfect ring for you!</p>
         <p> €15,00</p>
       </div>
+
+       <div class="product">
+         <img id="p1" src="ring2.png" alt="Golden ring2"> 
+          <h2>Golden Ring</h2>
+          <p> The perfect ring for you!</p>
+           <p>€20,00</p>
+             </div>
+
+       <div class="product">
+         <img id="p1" src="ring3.png" alt="Zilver ring3"> 
+         <h2>Zilver Ring</h2>
+         <p> The perfect ring for you!</p>
+          <p>€17,50</p>
+          </div>
+
+       <div class="product">
+         <img id="p1" src="ring4.png" alt="Zilver ring4"> 
+         <h2>Zilver Ring</h2>
+         <p> The perfect ring for you!</p>
+          <p>€22,00</p>
+           </div>
+
+      <div class="product">
+        <img id="p1" src="ring5.png" alt="Zilver ring5"> 
+        <h2>Zilver Ring</h2>
+        <p> The perfect ring for you!</p>
+        <p>€20,00</p>
+         </div>
+         </section>
+
+    <footer>
+      <p>&copy; 2024 NYF Jewellery. All rights reserved.</p>
+      </footer>
+       </body>
+</html>
