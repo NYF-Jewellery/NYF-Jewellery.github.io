@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
   <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css>
     <style>
     body {
       font-family: Arial, sans-serif;
@@ -52,12 +53,22 @@
         align-items: flex-start;
 
       }
+
+      section2 {
+        display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+        padding: 1em;
+
+      }
       .product-info{
         text-align: center;
         flex: 1;
-        margin-top: 2em;
+        margin-right: 2em;
       }
-
+.product-info {
+  margin-bottom: 0.5em;
+}
       .product-info img {
         max-width: 50%;
         height: auto;
@@ -75,6 +86,111 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
+      .buy-button {
+        background-color: pink;
+        color: black;
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: blackground-color 0.3s ease;
+        }
+
+      .buy-button:hover {
+        background-color: hotpink;
+      }
+
+      .betaling-methode {
+       background-color: pink;
+        padding: 20px;
+        text-align: center;
+        margin-top: 2em;
+      }
+
+      .betaling-methode img {
+        max-width: 50px;
+        margin: 0 10px;
+      }
+      
+      .cart-icon { 
+        font-size: 1.5em;
+        color: black;
+        cursor: pointer;
+        margin-top: 1em;
+        margin-right: 1em;
+        }
+
+      .cart-icon i {
+        margin-right: 0.2em;
+       } 
+      
+      .search-bar {
+        display: flex;
+        align-items: center;
+        margin-top: 1em;
+      }
+
+      .search-bar input[type="text"],
+      .search-bar button {
+      padding: 0.5em;
+        font-size: 1em;
+        margin-right: 0.5em;
+        border: 1px solid white;
+        border-radius: 4px
+      }
+
+      .search-bar {
+        margin-top: 1em;
+        margin-right: 1em;
+      }
+
+      .search-bar {
+        text-align: left;
+        padding: 1em;
+      }
+
+      .recommended-rings {
+        margin-top: 2em;
+        text-align: center;
+      }
+
+      .ring-item {
+        display: inline-block;
+        text-align: center;
+        margin: 0 1em;
+      }
+      .recommended-item img {
+        max-width: 70%;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0,0.1);
+        margin-bottom: 0.5em;
+      }
+
+      .ring-item p {
+        margin: 0.5em 0;
+        font-size: 1em;
+        color: black;
+      }
+
+      .product {
+          flex: 0 0 30%;
+        text-align: center;
+          background-color: white;
+        padding: 0.5em;
+        margin: 0.5em;
+      }
+
+      .product img {
+        width: 100%;
+        }
+
+      #p1 {
+      width: 120px;
+        height: 120;
+      }
       footer {
           background-color: white;
           border-top: 2px solid gold;
@@ -88,6 +204,15 @@
 <body>
 <header>
   <h1> NYF Jewellery</h1>
+  <div class="search-bar" >
+     <input type="text" placeholder="Search..."
+       <button type="submit">Search</button>
+   </div>
+    <div class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+  </div>
+  
+  
 </header>
 
   <nav>
@@ -99,21 +224,54 @@
 
   <section>
     <div class="product-info">
-      <img src=ring6.jpg alt="Royale Ring">
       <h2> Royale Ring</h2>
+      <img src=ring6.jpg alt="Royale Ring">
     </div>
 
     <div class="product-details">
       <h3> Over De Ring</h3>
-      <p> Met deze ring ga je echt de royaliteit in!</p>
+      <p> Deze royale ring is gemaakt van 14 karaat goud. Met deze ring ga je echt de royaliteit in! </p>
       <h3> Prijs</h3>
       <p> €34,75</p>
+      <button class="buy-button"> Koop</button>
     </div>
   </section>
+  
+<div class="recommended-rings">
+  <h2>Aanbevolen Ringen</h2>
+  </div>
+  <section>
+    <div class="product">
+      <img id="p1" src="ring1.png" alt="Zilver ring1"> 
+      <h2>Sprankelende Ring</h2>
+      <p> Als je van sprankels houdt, is dit perfect voor jou!</p>
+      <p> €15,00</p>
+    </div>
+     <div class="product">
+       <img id="p1" src="ring2.png" alt="Golden ring2"> 
+        <h2>Briljante Ring</h2>
+        <p> Een speciale ring voor een speciaal iemand!</p>
+         <p>€19,99</p>
+           </div>
 
+     <div class="product">
+       <img id="p1" src="ring3.png" alt="Zilver ring3"> 
+       <h2>Diamanten Ring</h2>
+       <p> Shine bright like a diamond!</p>
+        <p>€17,50</p>
+        </div>
+</section>
+
+  <div class="betaling-methode">
+    <h2>Betaal Makkelijk Met</h2>
+    <img src="ideal-logo.jpg" alt="ideal">
+    <img src="visa.jpg" alt="visa">
+    <img src="Mastercard-logo.svg.png" alt="mastercard">
+    <img src="Paypal-logo.png" alt="paypal">
+  </div>
+  
   <footer>
   <p>&copy; 2024 NYF Jewellery. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
