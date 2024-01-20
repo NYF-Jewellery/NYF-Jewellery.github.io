@@ -1,83 +1,112 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <title>NYF Jewellery</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-       {
-        box-sizing: border-box;
-      }
-      body {
-        background-color: pink;
-        margin: 0;
-      }
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<title> NYF Jewellery</title>
+<style>
+  body {
+     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+  }
 
-      /* Style the header */   
-      .header {
-        background-color: white;
-        padding: 20px;
-        text-align: center;
-        border: gold;
-      }
-      
-     /* Style the top navigation bar */
-      .topnav  {
-        overflow: hidden;
-        background: white;
-      }
+  header {
+    background-color: pink;
+    border-bottom: 2px solid gold;
+     color: black;
+     padding: 1em;
+    text-align: center;
+  }
 
-     /* Style the topnav links */
-      .topnav a {
-        float: left;
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 30px 32px;
-        text-decoration: none;
-        font-size: 200%
-  
-      }
-     /* change color on hover*/
-      ,topnav a: hover {
-       background-color: blue;
-       color: black;
-      }
-      #p1{
-        font-size: 300%;
-        text-align: center;
-        font-size: heather;
-      }
-      #p2{
-        position: absolute;
-        top: 65px;
-        left: 970px;
-        font-family: Layla
-      }
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
 
-      
-      .topnav1 {
-        position: absolute;
-        top: 70px;
-        left: 100px;
-      }
-    </style>
-  
-  </head> 
+  .search-bar input[type="text"],
+  .search-bar button {
+    padding: 0.5em;
+    font-size: 1em;
+    margin-right: 0.5em;
+    border: 1px solid white;
+    border-radius: 4px 
+  }
 
+  #p1 {
+    width: 200px;
+    height: 150;
+  }
+
+  nav {
+     background-color: white;
+    overflow: hidden;
+    border: 1px solid gold;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: black;
+     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  nav a:hover {
+    background-color: pink;
+  }
+
+  section {
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+  padding: 1em;
+  }
+
+  .product {
+    flex: 0 0 30%;
+     border: 1px solid white;
+     margin: 1em;
+      text-align: center;
+      background-color: white;
+      padding: 1em;
+  }
+
+  footer {
+      background-color: white;
+      border-top: 2px solid gold;
+      color: black;
+      padding: 1em;
+      text-align: center;
+    }
+
+  .search-bar {
+      text-align: left;
+      padding: 1em;
+    }
+
+  </style>
+  <title> NYF Jewellery</title>
+  </head>
   <body>
-    <p id="p1">NYF </p>
-    <p id="p2"> Jewellery</p>
-    <div class="topnav1">
-      <input type="text" placeholder="Search..">
-    </div>
-    <div class="topnav">
-      <a href="ringen.html"> Ringen </a>
-      <a href="kettingen.html"> Kettingen </a>
-      <a href="armbanden.html"> Armbanden </a>
-    <a href="index.html"> Home </a>
-      
-  </body>
+    <header>
+      <h1> NYF Jewellery</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+      </div>
+        </header>
 
+    <nav>
+      <a href="index.html"> Home</a>
+      <a href=armbanden.html> Armbanden</a>
+      <a href=ringen.html> Ringen</a>
+      <a href=kettingen.html> Kettingen</a>
+    </nav>
+
+    <footer>
+      <p>&copy; 2024 NYF Jewellery. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

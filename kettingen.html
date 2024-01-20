@@ -1,84 +1,108 @@
 <!DOCTYPE html>
 <html>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width-device-width, initial-scale=1.0">
-
-  <style>
+  <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<title> NYF Jewellery</title>
+<style>
   body {
      font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: pink;
   }
-   header {
+
+  header {
     background-color: pink;
     border-bottom: 2px solid gold;
-     color: #333;
+     color: black;
      padding: 1em;
     text-align: center;
   }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-bar input[type="text"],
+  .search-bar button {
+    padding: 0.5em;
+    font-size: 1em;
+    margin-right: 0.5em;
+    border: 1px solid white;
+    border-radius: 4px 
+  }
+
   #p1 {
     width: 200px;
     height: 150;
   }
+
   nav {
-    background-color: white;
+     background-color: white;
     overflow: hidden;
     border: 1px solid gold;
   }
+
   nav a {
     float: left;
     display: block;
     color: black;
-    text-align: center;
+     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   nav a:hover {
     background-color: pink;
   }
+
   section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 1em;
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+  padding: 1em;
   }
+
   .product {
     flex: 0 0 30%;
-    border: 1px solid #ddd;
-    margin: 1em;
-    text-align: center;
-    background-color: #fff;
-    padding: 1em;
+     border: 1px solid white;
+     margin: 1em;
+      text-align: center;
+      background-color: white;
+      padding: 1em;
   }
+
   footer {
-    background-color: #fff;
-    border-top: 2px solid gold;
-    color: #333;
-    padding: 1em;
-    text-align: center;
-  }
+      background-color: white;
+      border-top: 2px solid gold;
+      color: black;
+      padding: 1em;
+      text-align: center;
+    }
+
   .search-bar {
-    text-align: left;
-    padding: 1em;
-  } 
-    </style>
+      text-align: left;
+      padding: 1em;
+    }
+
+  </style>
   <title> NYF Jewellery</title>
   </head>
-   <body>
+  <body>
     <header>
+      <h1> NYF Jewellery</h1>
       <div class="search-bar">
         <input type="text" placeholder="Search...">
         <button type="submit">Search</button>
-        <h1> NYF Jewellery</h1>
+      </div>
         </header>
-     
-     <nav>
+
+    <nav>
       <a href="index.html"> Home</a>
       <a href=armbanden.html> Armbanden</a>
       <a href=ringen.html> Ringen</a>
       <a href=kettingen.html> Kettingen</a>
-      <a href=oefen2.html> Oefen 2</a>
     </nav>
 
     <footer>

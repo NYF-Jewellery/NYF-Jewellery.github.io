@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: pink;;
+  }
 
+  header {
+    background-color: pink;
+    border-bottom: 2px solid gold;
+     color: black;
+     padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .cart-icon { 
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+    }
+
+  .cart-icon i {
+    margin-right: 0.2em;
+   } 
+  h1 {
+    text-align: center;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-bar input[type="text"],
+  .search-bar button {
+  padding: 0.5em;
+    font-size: 1em;
+    margin-right: 0.5em;
+    border: 1px solid white;
+    border-radius: 4px
+  }
+
+  .search-bar {
+    margin-top: 1em;
+    margin-right: 1em;
+  }
+  #p1 {
+    width: 200px;
+    height: 150;
+  }
+
+  nav {
+     background-color: white;
+    overflow: hidden;
+    border: 1px solid gold;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: black;
+     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+   nav a:hover {
+     background-color: pink;
+   }
+
+section {
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+  padding: 1em;
+
+}
+
+  .product {
+    flex: 0 0 30%;
+     border: 1px solid white;
+     margin: 1em;
+      text-align: center;
+      background-color: white;
+      padding: 1em;
+  }
+
+  .product img {
+    width: 100%;
+    }
+
+  footer {
+      background-color: white;
+      border-top: 2px solid gold;
+      color: black;
+      padding: 1em;
+      text-align: center;
+    }
+
+  .search-bar {
+      text-align: left;
+      padding: 1em;
+    }
+
+  </style>
+  <title> NYF Jewellery</title>
+  </head>
+  <body>
+    <header>
+      <h1> NYF Jewellery</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+      </div>
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+    </header>
+    <nav>
+      <a href="index.html"> Home</a>
+      <a href=armbanden.html> Armbanden</a>
+      <a href=ringen.html> Ringen</a>
+      <a href=kettingen.html> Kettingen</a>
+    </nav>
+
+    <section>
+      <div class="product">
+        <a href="royalring.html">
+        <img id="p1" src="ring6.jpg" alt="Golden ring6"> 
+        </a>
+        <h2>Royale Ring</h2>
+        <p> De perfecte ring voor jou!</p>
+        <p> €34,75</p>
+      </div>
+
+      <div class="product">
+        <img id="p1" src="ring1.png" alt="Zilver ring1"> 
+        <h2>Diamond Ring</h2>
+        <p> The perfect ring for you!</p>
+        <p> €15,00</p>
+      </div>
+
+       <div class="product">
+         <img id="p1" src="ring2.png" alt="Golden ring2"> 
+          <h2>Golden Ring</h2>
+          <p> The perfect ring for you!</p>
+           <p>€19,99</p>
+             </div>
+
+       <div class="product">
+         <img id="p1" src="ring3.png" alt="Zilver ring3"> 
+         <h2>Zilver Ring</h2>
+         <p> The perfect ring for you!</p>
+          <p>€17,50</p>
+          </div>
+
+       <div class="product">
+         <img id="p1" src="ring4.png" alt="Zilver ring4"> 
+         <h2>Zilver Ring</h2>
+         <p> The perfect ring for you!</p>
+          <p>€22,99</p>
+           </div>
+
+      <div class="product">
+        <img id="p1" src="ring5.png" alt="Zilver ring5"> 
+        <h2>Zilver Ring</h2>
+        <p> The perfect ring for you!</p>
+        <p>€21,00</p>
+         </div>
+         </section>
+
+    <footer>
+      <p>&copy; 2024 NYF Jewellery. All rights reserved.</p>
+      </footer>
+       </body>
+</html>
