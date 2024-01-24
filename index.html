@@ -44,9 +44,13 @@
     max-width: 50px;
     margin: 0 10px;
   }
-  #p1 {
-    width: 200px;
-    height: 150;
+  #p10 {
+    width: 1300px;
+    height: 400px;
+  }
+  #p20 {
+    width: 1300px;
+    height: 400px;
   }
 
   nav {
@@ -80,9 +84,19 @@
      margin: 1em;
       text-align: center;
       background-color: white;
-      padding: 1em;
+      padding: 0.10em;
   }
 
+  .nyf {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  .jewellery {
+    font-family: Edwardian Script ITC;
+    font-size: 1.5em;
+  }
   footer {
       background-color: white;
       border-top: 2px solid gold;
@@ -101,7 +115,7 @@
   </head>
   <body>
     <header>
-      <h1> NYF Jewellery</h1>
+     <h1> <span class="nyf">NYF</span> <span class= jewellery>Jewellery</span></h1>
       <div class="search-bar">
         <input type="text" placeholder="Search...">
         <button type="submit">Search</button>
@@ -114,17 +128,27 @@
       <a href=ringen.html> Ringen</a>
       <a href=kettingen.html> Kettingen</a>
     </nav>
-
-    <div class="betaling-methode">
-      <h2>Betaal Makkelijk Met</h2>
-      <img src="ideal-logo.jpg" alt="ideal">
-      <img src="visa.jpg" alt="visa">
-      <img src="Mastercard-logo.svg.png" alt="mastercard">
-      <img src="Paypal-logo.png" alt="paypal">
-    </div>
-    
+    <section>
+      <div class="product">
+        <a href="Bestsellers.html">
+        <img id="p10" src="Bestsellers.jpg" alt="bestsellers"> 
+        </a>
+      </div>
+      <div class="product">
+        <a href="Deals.html">
+        <img id="p20" src="Deals.jpg" alt="deals"> 
+        </a>
+      </div>
+      
+      <div class="betaling-methode">
+        <h2>Betaal Makkelijk Met</h2>
+        <img src="ideal-logo.jpg" alt="ideal">
+        <img src="visa.jpg" alt="visa">
+        <img src="Mastercard-logo.svg.png" alt="mastercard">
+        <img src="Paypal-logo.png" alt="paypal">
+      </div>
     <footer>
-      <p>&copy; 2024 NYF Jewellery. All rights reserved.</p>
+      <p> &copy; 2024 NYF Jewellery. All rights reserved.</p>
     </footer>
   </body>
 </html>
