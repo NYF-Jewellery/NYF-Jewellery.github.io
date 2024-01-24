@@ -6,28 +6,28 @@
     <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css>
 <style>
   body {
-     font-family: Arial, sans-serif;
+     font-family: Arial, sans-serif; /* Lettertype*/
     margin: 0;
     padding: 0;
-    background-color: pink;
+    background-color: pink; /*Roze achtergrond*/
   }
 
   header {
     background-color: pink;
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid gold; /*Goude rand om navbar*/
      color: black;
-     padding: 1em;
+     padding: 1em; /*Padding aan alle kanten rond de header*/
     text-align: center;
-    display: flex;
+    display: flex; /*items recht zetten*/
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /*items in  het midden*/
   }
-
+  /*zoekbalk*/
   .search-bar {
     display: flex;
     align-items: center;
   }
-
+  /*Hoe het zoekbalk eruit ziet*/
   .search-bar input[type="text"],
   .search-bar button {
     padding: 0.5em;
@@ -41,7 +41,7 @@
    margin-top: 1em;
    margin-right: 1em;
   }
-
+  /*Winkelmand*/
   .cart-icon { 
     font-size: 1.5em;
     color: black;
@@ -53,7 +53,7 @@
   .cart-icon i {
     margin-right: 0.2em;
   } 
-  
+  /*De verschillende betalingsmethodes onderaan scherm*/
   .betaling-methode {
    background-color: pink;
     padding: 20px;
@@ -70,7 +70,7 @@
     width: 200px;
     height: 150;
   }
-
+  /*Bovenkant waar de links naar de verschillende sieraden staan*/
   nav {
      background-color: white;
     overflow: hidden;
@@ -89,13 +89,13 @@
   nav a:hover {
     background-color: pink;
   }
-
+  /*Lettertype*/
   .nyf {
     font-family: Arial;
     font-weight: bold;
     font-size: 2em;
   }
-
+  /*Lettertype*/
   .jewellery {
     font-family: Edwardian Script ITC;
     font-size: 1.5em;
@@ -116,7 +116,7 @@
       background-color: white;
       padding: 1em;
   }
-
+  /*Onderkant van de website*/
   footer {
       background-color: white;
       border-top: 2px solid gold;
@@ -138,13 +138,14 @@
         <i class="fas fa-shopping-cart"></i>
       </div>
         </header>
-
+    <!-- Link naar sieraden -->
     <nav>
       <a href="index.html"> Home</a>
       <a href=armbanden.html> Armbanden</a>
       <a href=ringen.html> Ringen</a>
       <a href=kettingen.html> Kettingen</a>
     </nav>
+     <!-- De producten met prijzen -->
     <section>
       <div class="product">
         <a href="StalenArmband.html">
@@ -174,7 +175,7 @@
         <p> Under the sea!</p>
         <p> €12,00</p>
       </div>
-     
+      <!-- De betalingsmethodes met afbeeldingen -->
     </section>
     <div class="betaling-methode">
       <h2>Betaal Makkelijk Met</h2>
@@ -183,7 +184,7 @@
       <img src="Mastercard-logo.svg.png" alt="mastercard">
       <img src="Paypal-logo.png" alt="paypal">
     </div>
-
+    <!-- onderkant website-->
     <footer>
       <p>&copy; 2024 NYF Jewellery. All rights reserved.</p>
     </footer>
