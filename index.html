@@ -3,6 +3,7 @@
   <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css>
 <style>
   body {
      font-family: Arial, sans-serif;
@@ -17,6 +18,9 @@
      color: black;
      padding: 1em;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .search-bar {
@@ -33,6 +37,18 @@
     border-radius: 4px 
   }
 
+  .cart-icon { 
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+    }
+
+  .cart-icon i {
+    margin-right: 0.2em;
+   } 
+
   .betaling-methode {
    background-color: pink;
     padding: 20px;
@@ -40,16 +56,20 @@
     margin-top: 2em;
   }
 
+  h1 {
+    text-align: center;
+  }
+
   .betaling-methode img {
     max-width: 50px;
     margin: 0 10px;
   }
   #p10 {
-    width: 1300px;
+    width: 1500px;
     height: 400px;
   }
   #p20 {
-    width: 1300px;
+    width: 1500px;
     height: 400px;
   }
 
@@ -72,22 +92,26 @@
   }
   
   section {
-  display: flex;
+   display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
-  padding: 1em;
+   padding: 1em;
   }
 
   .product {
-    flex: 0 0 30%;
+     flex: 0 0 30%;
      border: 1px solid white;
      margin: 1em;
-      text-align: center;
-    background-color: white;
-      padding: 1em;
+     text-align: center;
+     background-color: white;
+     padding: 1em;
   }
-
-
+  
+  .product1 {
+    padding-left: 145px;
+    padding-right: 129px;
+    
+  }
 
   .nyf {
     font-family: Arial;
@@ -99,6 +123,7 @@
     font-family: Edwardian Script ITC;
     font-size: 1.5em;
   }
+  
   footer {
       background-color: white;
       border-top: 2px solid gold;
@@ -108,8 +133,8 @@
     }
 
   .search-bar {
-      text-align: left;
-      padding: 1em;
+      margin-top: 1em;
+    margin-right: 1em;
     }
 
   </style>
@@ -121,6 +146,9 @@
       <div class="search-bar">
         <input type="text" placeholder="Search...">
         <button type="submit">Search</button>
+      </div>
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
       </div>
         </header>
 
@@ -141,6 +169,14 @@
         <img id="p20" src="Deals.jpg" alt="deals"> 
         </a>
       </div>
+    
+      <div class= "product1">
+        <h3 style="font-size:40px;"> ABOUT US </h3>
+        <p3 style="font-size:20px;"> Ontdek de nieuwste sieradentrends, modieuze kleding en accessoires bij NYF Jewellery! Elke maand voegen we nieuwe items toe aan onze categorie, variërend van prachtige kettingen tot trendy oorbellen. NYF Jewellery begon als hobby en is nu een bloeiend e-commercebedrijf met binnekort zelfs boetieks in Nederland. Wij streven ernaar modeliefhebbers te inspiren met de laatste trends en bieden een breed assortiment. Ontdek jouw nieuwe favoriete sieraden online met snele leveringen naar Nederland, België en Duitsland. Onze klanten waarderen ons met een 8.4 op Feedback - sluit je aan bij meer dan 5.000 andere NYF Jewellery-recensies!</p3>
+      </div>
+      
+        
+    
 
     </section>
 

@@ -3,6 +3,7 @@
   <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css>
 <style>
   body {
      font-family: Arial, sans-serif;
@@ -17,6 +18,10 @@
      color: black;
      padding: 1em;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
   }
 
   .search-bar {
@@ -44,6 +49,17 @@
     max-width: 50px;
     margin: 0 10px;
   }
+
+  .nyf {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  .jewellery {
+    font-family: Edwardian Script ITC;
+    font-size: 1.5em;
+  }
   #p1 {
     width: 200px;
     height: 150;
@@ -67,6 +83,18 @@
     background-color: pink;
   }
 
+  .cart-icon { 
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+    }
+
+  .cart-icon i {
+    margin-right: 0.2em;
+   } 
+
   section {
   display: flex;
    flex-wrap: wrap;
@@ -76,7 +104,7 @@
 
   .product {
     flex: 0 0 30%;
-     border: 1px solid white;
+     border: 2px solid gold;
      margin: 1em;
       text-align: center;
       background-color: white;
@@ -92,8 +120,8 @@
     }
 
   .search-bar {
-      text-align: left;
-      padding: 1em;
+      margin-top: 1em;
+    margin-right: 1em;
     }
 
   </style>
@@ -101,10 +129,13 @@
   </head>
   <body>
     <header>
-      <h1> NYF Jewellery</h1>
+      <h1> <span class="nyf">NYF</span> <span class= jewellery>Jewellery</span></h1>
       <div class="search-bar">
         <input type="text" placeholder="Search...">
         <button type="submit">Search</button>
+      </div>
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
       </div>
         </header>
 
